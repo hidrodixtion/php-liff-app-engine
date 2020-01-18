@@ -27,8 +27,10 @@
                 Catatan Harianku
             </h1>
             <ul class="nav nav-pills">
-                <li><a id="nav-list-catatan" href="javascript:void(0);" onclick="gantiMenu('list-catatan');">List Catatan</a></li>
-                <li><a id="nav-tambah-catatan" href="javascript:void(0);" onclick="gantiMenu('tambah-catatan');">Tambah Catatan</a></li>
+                <li><a id="nav-list-catatan" href="javascript:void(0);" onclick="gantiMenu('list-catatan');">List
+                        Catatan</a></li>
+                <li><a id="nav-tambah-catatan" href="javascript:void(0);" onclick="gantiMenu('tambah-catatan');">Tambah
+                        Catatan</a></li>
             </ul>
 
         </div>
@@ -73,7 +75,8 @@
                 </div>
                 <input type="button" value="Simpan" onclick="simpanEditData();" class="btn btn-success btn-small" />
                 <input type="reset" value="Reset" onclick="" class="btn btn-warning btn-small" />
-                <input type="button" value="Cancel" onclick="gantiMenu('list-catatan');" class="btn btn-warning btn-small" />
+                <input type="button" value="Cancel" onclick="gantiMenu('list-catatan');"
+                    class="btn btn-warning btn-small" />
             </form>
         </div>
 
@@ -97,7 +100,8 @@
                     <label for="disabled">Agenda:</label>
                     <textarea class="form-control" id="lagenda" name="agenda" disabled></textarea>
                 </div>
-                <input type="button" value="Kembali" onclick="gantiMenu('list-catatan');" class="btn btn-warning btn-small" />
+                <input type="button" value="Kembali" onclick="gantiMenu('list-catatan');"
+                    class="btn btn-warning btn-small" />
             </form>
         </div>
 
@@ -142,7 +146,8 @@
                 <div id="isInClientMessage"></div>
                 <div id="apiReferenceMessage">
                     <p>Available LIFF methods vary depending on the browser you use to open the LIFF app.</p>
-                    <p>Please refer to the <a href="https://developers.line.biz/en/reference/liff/#initialize-liff-app">API reference
+                    <p>Please refer to the <a
+                            href="https://developers.line.biz/en/reference/liff/#initialize-liff-app">API reference
                             page</a> for more information.</p>
                 </div>
             </div>
@@ -162,13 +167,15 @@
                 </ol>
             </code>
             <p>If you are using any other platform, please add your LIFF ID in the <code>index.html</code> file.</p>
-            <p>For more information about how to add your LIFF ID, see <a href="https://developers.line.biz/en/reference/liff/#initialize-liff-app">Initializing the LIFF
+            <p>For more information about how to add your LIFF ID, see <a
+                    href="https://developers.line.biz/en/reference/liff/#initialize-liff-app">Initializing the LIFF
                     app</a>.</p>
         </div>
         <!-- LIFF INIT ERROR -->
         <div id="liffInitErrorMessage" class="hidden">
             <p>Something went wrong with LIFF initialization.</p>
-            <p>LIFF initialization can fail if a user clicks "Cancel" on the "Grant permission" screen, or if an error occurs in the process of <code>liff.init()</code>.
+            <p>LIFF initialization can fail if a user clicks "Cancel" on the "Grant permission" screen, or if an error
+                occurs in the process of <code>liff.init()</code>.
         </div>
         <!-- NODE.JS LIFF ID ERROR -->
         <div id="nodeLiffIdErrorMessage" class="hidden">
@@ -179,7 +186,7 @@
 </body>
 <!-- Integrasi LIFF SDK dan konfigurasi aplikasi catatan sederhana -->
 <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
-<script src="catatan-config.js"></script>
 <script src="liff-starter.js"></script>
+<script src="catatan-config.js"></script>
 
 </html>
