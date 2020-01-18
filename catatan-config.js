@@ -1,4 +1,4 @@
-ction loadCatatan() {
+function loadCatatan() {
     if (localStorage.list_data && localStorage.id_data) {
         list_data = JSON.parse(localStorage.getItem('list_data'));
         var data_app = "";
@@ -93,7 +93,7 @@ function simpanData() {
         }]).then(function () {
             alert('Catatan Tersimpan');
         }).catch(function (error) {
-            alert('Aduh kok error ya... ' + error);
+            alert('Aduh kok error ya...');
         });
     }
 
@@ -205,4 +205,3 @@ function gantiMenu(menu) {
         $('#list-catatan').hide();
     }
 }
-
